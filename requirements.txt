@@ -1,0 +1,7 @@
+ifcopenshell==0.8.5
+scikit-learn==1.8.0
+joblib==1.5.3
+numpy==2.3.3
+scipy==1.17.1
+threadpoolctl==3.6.0
+
