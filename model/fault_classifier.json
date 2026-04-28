@@ -1,50 +1,18 @@
 {
-  "kind": "sklearn_random_forest_fault_classifier",
-  "labels": [
-    "invalid_representation",
-    "normal"
-  ],
-  "feature_names": [
-    "attr_count",
-    "bad_number_count",
-    "bad_representation",
-    "bad_window_height",
-    "has_missing_global_id",
-    "has_representation",
-    "id_norm",
-    "inverse_count",
-    "is_root",
-    "null_count",
-    "point_count",
-    "reference_count",
-    "type:IfcBeam",
-    "type:IfcCartesianPoint",
-    "type:IfcColumn",
-    "type:IfcDoor",
-    "type:IfcPolyline",
-    "type:IfcProject",
-    "type:IfcRelAggregates",
-    "type:IfcSlab",
-    "type:IfcWall",
-    "type:IfcWallStandardCase",
-    "type:IfcWindow"
-  ],
+  "kind": "nearest_centroid_fault_classifier",
+  "labels": [],
+  "feature_names": [],
   "means": [],
   "scales": [],
   "centroids": {},
-  "estimator_path": "C:\\Users\\soumy\\OneDrive\\Desktop\\bim & ifc\\model\\fault_classifier.joblib",
   "metrics": {
-    "training_samples": 12041,
-    "training_files": 258,
+    "training_samples": 240,
     "label_counts": {
-      "normal": 12038,
-      "invalid_representation": 3
+      "normal": 240
     },
-    "accuracy": 1.0,
-    "loss": 0.000664,
-    "algorithm": "scikit-learn RandomForestClassifier over engineered IFC entity features",
-    "n_estimators": 60,
-    "max_depth": 14,
-    "n_jobs": 1
-  }
+    "accuracy": 0.0,
+    "loss": 1.0,
+    "note": "Not enough labeled fault classes to train a classifier."
+  },
+  "estimator_path": null
 }
