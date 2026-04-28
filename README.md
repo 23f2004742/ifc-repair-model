@@ -50,6 +50,26 @@ python src\ifc_repair_ai.py run --input-dir data\input --output-dir data\output\
 
 Remove `--fast` for full before/after IfcOpenShell validation. It is slower but gives stricter validation metrics.
 
+## Web UI
+
+Install dependencies, then start the local UI:
+
+```powershell
+python -m pip install -r requirements.txt
+.\run_ui.cmd
+```
+
+The UI lets you:
+
+- upload one or more `.ifc` files
+- upload a `.zip` containing IFC files
+- store uploaded IFCs in `data/input`
+- train the repair profile and classifier
+- repair the files into `data/output/repaired_ifc`
+- download `fault_report.jsonl`
+- download all outputs as a ZIP
+- inspect model parameters, classifier accuracy/loss, and repair metrics
+
 ## Train Only
 
 ```powershell
@@ -118,4 +138,3 @@ Upload a ZIP containing `src`, `model`, `requirements.txt`, and `data/input`, th
   --classifier-out "model/fault_classifier.json" \
   --fast
 ```
-

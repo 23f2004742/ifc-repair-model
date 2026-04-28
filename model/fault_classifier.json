@@ -32,7 +32,7 @@
   "means": [],
   "scales": [],
   "centroids": {},
-  "estimator_path": "model\\fault_classifier.joblib",
+  "estimator_path": "C:\\Users\\soumy\\OneDrive\\Desktop\\bim & ifc\\model\\fault_classifier.joblib",
   "metrics": {
     "training_samples": 12041,
     "training_files": 258,
